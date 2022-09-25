@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Syncfusion.Compression.Net.Core/20.2.0.50": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/20.2.0.50": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/20.2.0.50": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "20.2.0.50",
+          "Syncfusion.Licensing": "20.2.0.50"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Syncfusion.Compression.Net.Core/20.2.0.50": {
+      "sha512": "TgCWKcZtKZGQwDILipJCNzT9e4LPiSNRKeF7LiYs98ypAU8NLDQRokOdMhJ6M+E+InZyV2eFu3fFlsI6uCj8jA==",
+      "type": "package",
+      "path": "syncfusion.compression.net.core/20.2.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net6.0/Syncfusion.Compression.Portable.dll",
+        "lib/net6.0/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard1.2/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.xml",
+        "syncfusion.compression.net.core.20.2.0.50.nupkg.sha512",
+        "syncfusion.compression.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/20.2.0.50": {
+      "sha512": "Q7EV551czCXo6+zgk4/S+/p7dHvkMMLiZCDuqiNaHuaizXOIDqbWv9VVCgplUH2T+kjLTylpuHWad06P+LkgzQ==",
+      "type": "package",
+      "path": "syncfusion.licensing/20.2.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.20.2.0.50.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.XlsIO.Net.Core/20.2.0.50": {
+      "sha512": "V5RBCKAsoZo9cfwivMWhD1ez53Jv/y+3u9BJFy1TJear/Xw/uHsbEriySXmTOblJPVeHJRlFiwou0cr7zwvi0g==",
+      "type": "package",
+      "path": "syncfusion.xlsio.net.core/20.2.0.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/net6.0/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard1.2/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.xml",
+        "syncfusion.xlsio.net.core.20.2.0.50.nupkg.sha512",
+        "syncfusion.xlsio.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Syncfusion.XlsIO.Net.Core >= 20.2.0.50"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\peter\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.4.0.38\\ToolboxNuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Development\\TimeCalculator\\TimeCalculator\\TimeCalculator.csproj",
+      "projectName": "TimeCalculator",
+      "projectPath": "D:\\Development\\TimeCalculator\\TimeCalculator\\TimeCalculator.csproj",
+      "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
+      "outputPath": "D:\\Development\\TimeCalculator\\TimeCalculator\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.4.0.38\\ToolboxNuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Syncfusion.XlsIO.Net.Core": {
+            "target": "Package",
+            "version": "[20.2.0.50, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

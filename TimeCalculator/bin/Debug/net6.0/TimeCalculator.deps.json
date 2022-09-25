@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TimeCalculator/1.0.0": {
+        "dependencies": {
+          "Syncfusion.XlsIO.Net.Core": "20.2.0.50"
+        },
+        "runtime": {
+          "TimeCalculator.dll": {}
+        }
+      },
+      "Syncfusion.Compression.Net.Core/20.2.0.50": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "20.2600.0.50",
+            "fileVersion": "20.2600.0.50"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.2.0.50": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.2.0.50",
+            "fileVersion": "20.2.0.50"
+          }
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/20.2.0.50": {
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "20.2.0.50",
+          "Syncfusion.Licensing": "20.2.0.50"
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {
+            "assemblyVersion": "20.2600.0.50",
+            "fileVersion": "20.2600.0.50"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TimeCalculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Compression.Net.Core/20.2.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TgCWKcZtKZGQwDILipJCNzT9e4LPiSNRKeF7LiYs98ypAU8NLDQRokOdMhJ6M+E+InZyV2eFu3fFlsI6uCj8jA==",
+      "path": "syncfusion.compression.net.core/20.2.0.50",
+      "hashPath": "syncfusion.compression.net.core.20.2.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.2.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q7EV551czCXo6+zgk4/S+/p7dHvkMMLiZCDuqiNaHuaizXOIDqbWv9VVCgplUH2T+kjLTylpuHWad06P+LkgzQ==",
+      "path": "syncfusion.licensing/20.2.0.50",
+      "hashPath": "syncfusion.licensing.20.2.0.50.nupkg.sha512"
+    },
+    "Syncfusion.XlsIO.Net.Core/20.2.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V5RBCKAsoZo9cfwivMWhD1ez53Jv/y+3u9BJFy1TJear/Xw/uHsbEriySXmTOblJPVeHJRlFiwou0cr7zwvi0g==",
+      "path": "syncfusion.xlsio.net.core/20.2.0.50",
+      "hashPath": "syncfusion.xlsio.net.core.20.2.0.50.nupkg.sha512"
+    }
+  }
+}
