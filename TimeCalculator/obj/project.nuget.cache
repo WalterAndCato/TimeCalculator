@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ENNALfir/n31rcog93luahczO3CZZyW5cAlEbvmoZkF5rDlMNIEdB0c8c57CxOSM8jkb2yiUr3HJtaqmkuJ1RQ==",
+  "dgSpecHash": "gfO0CSwCU35daqHuLkVoRlHZsDfFbDX+Du2EtbHQZ/sn0f51/O1bG9vpfWQG0L0fLA7TfYLoFykRXoUPtwfyPg==",
   "success": true,
-  "projectFilePath": "D:\\Development\\TimeCalculator\\TimeCalculator\\TimeCalculator.csproj",
+  "projectFilePath": "C:\\Users\\ste\\RiderProjects\\TimeCalculator\\TimeCalculator\\TimeCalculator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\peter\\.nuget\\packages\\syncfusion.compression.net.core\\20.2.0.50\\syncfusion.compression.net.core.20.2.0.50.nupkg.sha512",
-    "C:\\Users\\peter\\.nuget\\packages\\syncfusion.licensing\\20.2.0.50\\syncfusion.licensing.20.2.0.50.nupkg.sha512",
-    "C:\\Users\\peter\\.nuget\\packages\\syncfusion.xlsio.net.core\\20.2.0.50\\syncfusion.xlsio.net.core.20.2.0.50.nupkg.sha512"
+    "C:\\Users\\ste\\.nuget\\packages\\syncfusion.compression.net.core\\20.3.0.59\\syncfusion.compression.net.core.20.3.0.59.nupkg.sha512",
+    "C:\\Users\\ste\\.nuget\\packages\\syncfusion.licensing\\20.3.0.59\\syncfusion.licensing.20.3.0.59.nupkg.sha512",
+    "C:\\Users\\ste\\.nuget\\packages\\syncfusion.xlsio.net.core\\20.3.0.59\\syncfusion.xlsio.net.core.20.3.0.59.nupkg.sha512"
   ],
   "logs": []
 }
