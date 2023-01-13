@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text;
 
 namespace TimeCalculatorLib;
 
@@ -17,6 +18,7 @@ public class Kalendermonat
         
         Kalendertage = new List<Kalendertag>();
         float Urlaubswert = 0f;
+        bool Feiertag = false;
         var wochentage = Kalendertag.GetDates(year,month);
         foreach (var tag in wochentage)
         {
@@ -30,7 +32,11 @@ public class Kalendermonat
 
             }
 
-            Kalendertage.Add(new Kalendertag(tag,Urlaubswert));
+            if (Kalenderjahr.Feiertage.Exists(x => x.Item1.Day == tag.Day && x.Item1.Month == tag.Month && x.Item1.Year == tag.Year))
+            {Feiertag = true;}
+            else {Feiertag = false;}
+            
+            Kalendertage.Add(new Kalendertag(tag,Urlaubswert,Feiertag));
         }
     }
 

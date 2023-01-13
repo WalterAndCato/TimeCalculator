@@ -57,29 +57,46 @@ namespace chpd
                 Console.WriteLine($"Monat: {currentmonth.Month}.{currentmonth.Year}");
                 foreach (var ktag in kalendermonat.Kalendertage)
                 {
+                    Console.WriteLine(String.Format(@"{0,12}","----------------------------------------------------------------------------"));
                     if (ktag.Buchungen.Count % 2 != 0)
-                        Console.WriteLine($"Fehler bei Tag {ktag.Id.ToShortDateString()}: Ungerade Zahl Änderungen: {ktag.Buchungen.Count}");
-                    else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(String.Format("{0,12:dd.MM.yyyy}{1,12}{2,12}", ktag.Id, "",$"Fehler: Ungerade Anzahl Buchungen: {ktag.Buchungen.Count}"));
+                        Console.ForegroundColor = ConsoleColor.White;                        
+                    }
 
-                        var time = ktag.GetArbeitszeit();
-
-                        TimeSpan differenz = ktag.GetDifferenz();
-                        totaldiff = totaldiff.Add(differenz);
-                        string differenzstring = differenz.Ticks < 0
-                            ? "-" + differenz.ToString(@"hh\:mm")
-                            : "+" + differenz.ToString(@"hh\:mm");
-                        string totaldiffstring = totaldiff.Ticks < 0
-                            ? "-" + totaldiff.ToString(@"hh\:mm")
-                            : "+" + totaldiff.ToString(@"hh\:mm");
-                        if (differenz.Ticks < 0) Console.ForegroundColor = ConsoleColor.Yellow;
-                        else if (ktag.Urlaub > 0) Console.ForegroundColor = ConsoleColor.Magenta;
-                        else Console.ForegroundColor = ConsoleColor.White;
-                        var output = String.Format(@"{0,12:dd.MM.yyyy}{1,12:hh\:mm}{2,12:hh\:mm}{3,12:n2}{4,12}{5,12}",
-                            ktag.Id, new TimeSpan(8, 0, 0),time, ktag.Urlaub,differenzstring, totaldiffstring);
-                        Console.WriteLine(output);
+                    if (ktag.Feiertag)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(String.Format(@"{0,12:dd.MM.yyyy}{1,12}",ktag.Id,"Feiertag"));
+                        Console.ForegroundColor = ConsoleColor.White;
+                        continue;
+                    }
+                    
+                    var time = ktag.GetTagesArbeitszeit();
+                    foreach (var db in ktag.Doppelbuchungen)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(String.Format("{0,12}{1,12}", "", $"Doppelbuchung: {db.ToLongTimeString()}"));
                         Console.ForegroundColor = ConsoleColor.White;
                     }
+                    
+                    TimeSpan differenz = ktag.GetDifferenz();
+                    totaldiff = totaldiff.Add(differenz);
+                    string differenzstring = differenz.Ticks < 0
+                        ? "-" + differenz.ToString(@"hh\:mm")
+                        : "+" + differenz.ToString(@"hh\:mm");
+                    string totaldiffstring = totaldiff.Ticks < 0
+                        ? String.Format("{0:00}", totaldiff.Hours) + ":" + String.Format("{0:00}", Math.Abs(totaldiff.Minutes)) 
+                        : String.Format("{0:00}", totaldiff.Hours) + ":" + String.Format("{0:00}", totaldiff.Minutes) ;
+                    if (differenz.Ticks < 0) Console.ForegroundColor = ConsoleColor.Yellow;
+                    else if (ktag.Urlaub > 0) Console.ForegroundColor = ConsoleColor.Magenta;
+                    else Console.ForegroundColor = ConsoleColor.White;
+                    var output = String.Format(@"{0,12:dd.MM.yyyy}{1,12:hh\:mm}{2,12:hh\:mm}{3,12:n2}{4,12}{5,12}",
+                        ktag.Id, new TimeSpan(8, 0, 0),time, ktag.Urlaub,differenzstring, totaldiffstring);
+                    Console.WriteLine(output);
+                    Console.ForegroundColor = ConsoleColor.White;
+                  //  }
                 }
                 Console.WriteLine($"Übertrag: {totaldiff}");
                 

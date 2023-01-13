@@ -10,7 +10,16 @@ public class Kalenderjahr
         (new DateTime(2022,10,17), 1f),
         (new DateTime(2022,10,31), 1f),
         (new DateTime(2022,11,18), 1f),
-        (new DateTime(2022,11,21), 1f)
+        (new DateTime(2022,11,21), 1f),
+        (new DateTime(2023,1,3), 1f),
+        (new DateTime(2023,1,4), 1f),
+        (new DateTime(2023,1,5), 1f),
+        (new DateTime(2023,1,6), 1f)
+    };
+    
+    public static List<(DateTime,float)> Feiertage = new List<(DateTime,float)>{
+        (new DateTime(2022,01,1), 1f),
+        (new DateTime(2023,1,2), 1f)
     };
     
     public static List<DateOnly> GetBuchungstage(string buchungstext)
